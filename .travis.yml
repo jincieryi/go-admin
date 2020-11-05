@@ -3,3 +3,5 @@ go:
   - "1.15"
 script:
   - go get -v
+  - go build
+  - ./go-admin server -c config/settings.yml -p 8000
